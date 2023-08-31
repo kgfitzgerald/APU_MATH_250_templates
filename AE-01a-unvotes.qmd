@@ -22,7 +22,7 @@ How do various countries vote in the United Nations General Assembly, how have t
 
 ## Packages
 
-We will use the **tidyverse**, **lubridate**, and **scales** packages for data wrangling and visualization,  and the **unvotes** package for the data.
+We will use the **tidyverse**, **lubridate**, and **scales** packages for data wrangling and visualization, and the **unvotes** package for the data.
 
 ```{r}
 #| label: load-packages
