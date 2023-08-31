@@ -40,9 +40,7 @@ library(datasauRus)
 
 # Exercise 1
 
-```{r ex-1}
-
-```
+> YOUR ANSWER HERE
 
 # Exercise 2
 
@@ -54,13 +52,19 @@ library(datasauRus)
 ```{r ex-3}
 ```
 
+> YOUR COMMENTS HERE
+
 # Exercise 4
 
 ```{r ex-4}
 ```
+
+> YOUR COMMENTS HERE
 
 # Exercise 5
 
 ```{r ex-5}
 
 ```
+
+> YOUR COMMENTS HERE
