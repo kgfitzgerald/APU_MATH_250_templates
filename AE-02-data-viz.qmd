@@ -25,7 +25,7 @@ In this application exercise, you will...
 
 ## Getting started
 
-Hit **Knit** to begin. You may need to change the Settings (Gear & Sprocket icon) to "Preview in Viewer Pane" to view the html file in the Viewer pane.
+Hit **Render** to begin. You may need to change the Settings (Gear & Sprocket icon) to "Preview in Viewer Pane" to view the html file in the Viewer pane.
 
 # Packages
 
