@@ -1,5 +1,5 @@
 ---
-title: "Lab 04: College rankings"
+title: "Lab 04: Women's Soccer"
 author: "YOUR NAME HERE"
 date: "`r Sys.Date()`"
 format: 
@@ -36,12 +36,21 @@ editor_options:
 #| message: false
 library(tidyverse)
 library(viridis)
+library(kableExtra)
+library(ggridges)
+library(scales)
+#install.packages("devtools")
+devtools::install_github("nwslR/nwslR", ref = "v0.0.0.9002")
+library(nwslR)
 ```
 
-```{r read-in-data, message = FALSE, warning = FALSE}
-natunivs <- read_csv("data/NatUnivs.csv")
-slacs <- read_csv("data/SLACs.csv")
-presvote_pop <- read_csv("data/PresVote_Population.csv")
+```{r}
+#| label: load-data
+#| message: false
+matches <- load_matches()
+players <- load_players()
+teams <- load_teams()
+metrics <- load_metrics()
 ```
 
 # Exercise 1
@@ -92,4 +101,4 @@ presvote_pop <- read_csv("data/PresVote_Population.csv")
 
 ```
 
-# Exercise 9
+# BONUS
