@@ -36,7 +36,7 @@ Write a line of code to read in the `hotels.csv` dataset from the `data` folder 
 
 ## Exercise 2
 
-Remove `eval = FALSE`, knit the document, and view the following visualization.
+Remove `eval = FALSE`, Render the document, and view the following visualization.
 
 ```{r plot, fig.width=10, eval = FALSE}
 hotels %>%
@@ -108,9 +108,9 @@ knitr::include_graphics("images/sales-1.png")
 
 # Stretch Goals
 
-If you finish the above exercises before time is up, try out the following two stretch goals.
+If you finish the above exercises before time is up, try out the following two stretch goals. Google when you don't know what code to use!
 
-1.  Manipulate the sales data in Exercise 4 such such that it looks like the following.
+1.  Manipulate the sales data in Exercise 4 such such that it looks like the following. *Hint: try creating two intermediate dataframes `brand1`* *and `brand2`, then combine them.*
 
 ```{r echo=FALSE, out.width="25%"}
 knitr::include_graphics("images/sales-2.png")
