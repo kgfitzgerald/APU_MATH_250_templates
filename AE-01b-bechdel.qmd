@@ -33,7 +33,7 @@ library(tidyverse)
 The dataset contains information on `r nrow(bechdel)` movies released between `r min(bechdel$year)` and `r max(bechdel$year)`. However we'll focus our analysis on movies released between 1990 and 2013.
 
 ```{r}
-bechdel90_13 <- bechdel %>% 
+bechdel90_13 <- bechdel |> 
   filter(between(year, 1990, 2013))
 ```
 
@@ -53,8 +53,8 @@ Let's take a look at how median budget and gross vary by whether the movie passe
 
 ```{r}
 #| message: false
-bechdel90_13 %>%
-  group_by(binary) %>%
+bechdel90_13 |>
+  group_by(binary) |>
   summarise(med_budget = median(budget_2013),
             med_domgross = median(domgross_2013, na.rm = TRUE),
             med_intgross = median(intgross_2013, na.rm = TRUE))
@@ -70,8 +70,8 @@ Next, let's take a look at how median budget and gross vary by a more detailed i
 
 ```{r}
 #| message: false
-bechdel90_13 %>%
-  #group_by(___) %>%
+bechdel90_13 |>
+  #group_by(___) |>
   summarise(med_budget = median(budget_2013),
             med_domgross = median(domgross_2013, na.rm = TRUE),
             med_intgross = median(intgross_2013, na.rm = TRUE))
@@ -80,15 +80,15 @@ bechdel90_13 %>%
 In order to evaluate how return on investment varies among movies that pass and fail the Bechdel test, we'll first create a new variable called `roi` as the ratio of the gross to budget.
 
 ```{r}
-bechdel90_13 <- bechdel90_13 %>%
+bechdel90_13 <- bechdel90_13 |>
   mutate(roi = (intgross_2013 + domgross_2013) / budget_2013)
 ```
 
 Let's see which movies have the highest return on investment.
 
 ```{r}
-bechdel90_13 %>%
-  arrange(desc(roi)) %>% 
+bechdel90_13 |>
+  arrange(desc(roi)) |> 
   select(title, roi, year)
 ```
 
@@ -108,8 +108,8 @@ ggplot(data = bechdel90_13,
 What are those movies with *very* high returns on investment?
 
 ```{r}
-bechdel90_13 %>%
-  filter(roi > 400) %>%
+bechdel90_13 |>
+  filter(roi > 400) |>
   select(title, budget_2013, domgross_2013, year)
 ```
 

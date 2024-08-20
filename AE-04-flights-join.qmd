@@ -36,7 +36,7 @@ Suppose you wanted to make a map of the route of every flight. What variables wo
 We want to join flights to airports. Note these two datasets have no variables in common so we will have to specify the variable to join by using `by =`. Check out the documentation for more information.
 
 ```{r}
-flights %>% 
+flights |> 
   left_join(airports, by = c("dest" = "faa"))
 ```
 
