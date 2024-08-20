@@ -161,7 +161,6 @@ The test statistic is given by $$T = \frac{b_1}{SE(b_1)}$$
 
 > YOUR ANSWER HERE
 
-
 # Submission & Grading
 
 Unlike other AEs, this assignment will be graded for correctness, out of 20 points. Each exercise is worth 1 point, and the Reflection prompts are worth 1 point. You should submit your .html no later than class-time on Tuesday.

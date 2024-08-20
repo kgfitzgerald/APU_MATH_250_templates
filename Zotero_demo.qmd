@@ -1,0 +1,12 @@
+---
+title: "Zotero demo"
+author: "Katie Fitzgerald"
+format: pdf
+bibliography: references.bib
+---
+
+This is how I can do an in-text citation [@fitzgerald2022].
+
+\pagebreak
+
+# References
