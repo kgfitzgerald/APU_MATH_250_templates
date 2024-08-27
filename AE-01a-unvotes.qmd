@@ -1,6 +1,6 @@
 ---
 title: "UN Votes"
-subtitle: "due Thursday, September 1, 4:20pm"
+subtitle: "due Thursday, August 29, 4:20pm"
 author: "YOUR NAME HERE"
 format: 
   html:
@@ -87,11 +87,7 @@ unvotes |>
 
 # Submission
 
-For this first Application Exercise, you do not need to submit anything to Canvas; I will simply view your work via RStudio Cloud. You will learn how to submit your documents in Lab 01.
-
-# Grading (10 pts)
-
-Application exercises are graded on completion. You will receive full credit if a reasonable attempt was made on each exercise.
+For this first Application Exercise, you do not need to submit anything to Canvas. You will learn how to submit your documents in Lab 01.
 
 ## References
 

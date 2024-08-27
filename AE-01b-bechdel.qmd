@@ -71,7 +71,7 @@ Next, let's take a look at how median budget and gross vary by a more detailed i
 ```{r}
 #| message: false
 bechdel90_13 |>
-  #group_by(___) |>
+  group_by(clean_test) |>
   summarise(med_budget = median(budget_2013),
             med_domgross = median(domgross_2013, na.rm = TRUE),
             med_intgross = median(intgross_2013, na.rm = TRUE))
